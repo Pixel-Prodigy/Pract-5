@@ -12,12 +12,20 @@ html {
   padding-top: 80px;
   height: 100vh;
 }
+.hide {
+  opacity: 0;
+  transform: scale(0);
+  transition: opa;
+}
 main {
   box-sizing: border-box;
   display: flex;
   height: 350px;
   width: 700px;
   font-family: "Old Standard TT", serif;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .left-side {
@@ -203,4 +211,117 @@ ul {
     height: 300px;
     border-radius: 6px 6px 0 0;
   }
+}
+.new_box {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border-radius: 20px;
+}
+.show {
+  display: block;
+}
+.container {
+  display: none;
+  position: absolute;
+}
+.show {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  font-family: "Farsan", cursive;
+}
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.heading {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+  font-family: "Farsan", cursive;
+}
+* {
+  box-sizing: border-box;
+}
+.price {
+  font-size: 18px;
+  color: grey;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  margin-bottom: 15px;
+}
+
+.checkbox-input {
+  margin-right: 10px;
+}
+
+.upi-section {
+  margin-bottom: 20px;
+}
+
+.upi-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.fast_text {
+  font-size: 12px;
+  text-align: start;
+  margin-top: 10px;
+  font-family: "Farsan", cursive;
+}
+.new_text_hide {
+  display: none;
+  font-family: "Farsan", cursive;
+}
+.new_box_heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 0 10px;
+}
+
+.buy-button {
+  background-color: #2cb24b;
+  color: white;
+  padding: 12px;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+.toggle {
+  background-color: white;
+  color: grey;
+  width: fit-content;
+  height: fit-content;
+}
+
+.buy-button:hover {
+  background-color: #228038;
+}
+.top_section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+.buy-img {
+  width: 150px;
+  border-radius: 10px;
+}
+.new_text {
+  display: block;
 }

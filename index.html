@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="app">
-      <main>
+     <main> 
         <div class="left-side">
           <h1>Biru Putaran</h1>
           <div class="svg">
@@ -100,13 +100,13 @@
                   />
                 </svg>
               </div>
-              <button>Buy Now</button>
+              <button class="first_button">Buy Now</button>
             </div>
           </div>
         </div>
         <div class="right-side">
           <div class="img-parent">
-            <img
+            <img class="img-right-side"
               src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg"
               alt="Omar Dsoky"
             />
@@ -124,6 +124,45 @@
           </div>
         </div>
       </main>
+      <div class="container">
+        <div class="box">
+          <div class="new_box_heading">
+          <h1>Bmazone 
+            </h1>
+            <button class="toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+            </svg>
+            </button>
+            </div>
+          <div class="top_section">
+            <img class="buy-img"
+            src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg"
+            alt="Omar Dsoky"
+          />
+          <div class="top_section_content">
+            
+          <h2 class="heading">Flower Pot</h2>
+          <span class="price">Base price: $49</span>
+        </div>
+        </div>
+            <div class="checkbox">
+                <input type="checkbox" id="fastDelivery" class="checkbox-input">
+                <label for="fastDelivery">Pay more for fast delivery</label>
+               <div class="new_text_hide">
+                <p class="fast_text"> delivery will take 10 days. put number of days you want the package. Lessing each day will cost 10$ more</p>
+              <input type="number" class="days" placeholder="10" value="10" min="1" max="10" >
+               </div>
+            </div>
+            <h4 class="final_price_h4"> Final Price: $<span class="final_price">49</span></h4>
+            <div class="upi-section">
+                <label for="upi">Enter UPI ID:</label>
+                <input type="text" id="upi" class="upi-input" placeholder="example@upi">
+            </div>
+            <button class="buy-button">Buy now</button>
+        </div>
     </div>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
